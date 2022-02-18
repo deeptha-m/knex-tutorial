@@ -4,9 +4,9 @@ module.exports = {
         client: 'mysql',
         connection: {
             host: '127.0.0.1',
-            user: [username],
-            password: [yourpassword],
-            database: [yourdatabase],
+            user: 'sqluser',
+            password: 'password',
+            database: 'golabi',
             charset: 'utf8',
         },
         migrations: {
