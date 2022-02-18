@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.get('/', (req, res) => {
   res.send('Hello World!');
 });
-
+//Read data with Knex.js
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
@@ -28,7 +28,7 @@ app.get('/user', (req, res) => {
     return res.json({success: false, message: 'An error occurred, please try again later.'});
   })
 })
-
+//Insert data with knex.js
 app.post('/user', (req, res) => {
     const name = req.body.name ? req.body.name : '';
 const email = req.body.email ? req.body.email : '';
